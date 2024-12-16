@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0614f2a9-3b85-4eb3-adc3-06e705893be9" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="Enum" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2peYHURpCwZP9hstovSkJ7Ou1Pp" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "LaTeX.Dokumentation.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "full.screen.before.presentation.mode": "false",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/abdul/Nextcloud13/Entwicklungsarbeit",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\abdul\Nextcloud13\Entwicklungsarbeit\src" />
+      <recent name="C:\Users\abdul\Nextcloud13\Entwicklungsarbeit" />
+      <recent name="C:\Users\user\Desktop\Informatik_Studium\Entwicklungsarbeit\src\resources" />
+      <recent name="C:\Users\user\Desktop\Informatik_Studium\Entwicklungsarbeit" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Entwicklungsarbeit" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Dokumentation" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" temporary="true">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <main-file>$PROJECT_DIR$/Docs/Dokumentation.tex</main-file>
+        <output-path>$PROJECT_DIR$/out</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="LaTeX.Dokumentation" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="LaTeX.Dokumentation" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0614f2a9-3b85-4eb3-adc3-06e705893be9" name="Changes" comment="" />
+      <created>1733127925464</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1733127925464</updated>
+      <workItem from="1733127926527" duration="170000" />
+      <workItem from="1733128143704" duration="614000" />
+      <workItem from="1733128784024" duration="161000" />
+      <workItem from="1733144252278" duration="14391000" />
+      <workItem from="1733229195357" duration="167000" />
+      <workItem from="1733230543591" duration="4221000" />
+      <workItem from="1733254090874" duration="1498000" />
+      <workItem from="1733255663367" duration="2343000" />
+      <workItem from="1733258079945" duration="27000" />
+      <workItem from="1733308498280" duration="161000" />
+      <workItem from="1733413368430" duration="19000" />
+      <workItem from="1733413427662" duration="9522000" />
+      <workItem from="1733579184898" duration="41000" />
+      <workItem from="1733742241346" duration="137000" />
+      <workItem from="1733837638349" duration="866000" />
+      <workItem from="1733838735247" duration="639000" />
+      <workItem from="1733839388846" duration="3040000" />
+      <workItem from="1733842689104" duration="788000" />
+      <workItem from="1733924821702" duration="619000" />
+      <workItem from="1733927076128" duration="498000" />
+      <workItem from="1733927600084" duration="2779000" />
+      <workItem from="1733930540528" duration="14460000" />
+      <workItem from="1733995267810" duration="89000" />
+      <workItem from="1733995369683" duration="152000" />
+      <workItem from="1733995699204" duration="34000" />
+      <workItem from="1733995874719" duration="280000" />
+      <workItem from="1733996167083" duration="329000" />
+      <workItem from="1733996868484" duration="1799000" />
+      <workItem from="1734032606397" duration="1239000" />
+      <workItem from="1734043264705" duration="3054000" />
+      <workItem from="1734109708259" duration="8823000" />
+      <workItem from="1734119757197" duration="208000" />
+      <workItem from="1734119986720" duration="8000" />
+      <workItem from="1734121971515" duration="130000" />
+      <workItem from="1734123286934" duration="400000" />
+      <workItem from="1734185763761" duration="17089000" />
+      <workItem from="1734274880650" duration="8065000" />
+      <workItem from="1734286560574" duration="1573000" />
+      <workItem from="1734290641279" duration="5156000" />
+      <workItem from="1734359010225" duration="1907000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
