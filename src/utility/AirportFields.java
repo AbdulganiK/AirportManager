@@ -16,5 +16,4 @@ public interface AirportFields {
     int RUNWAY_WIDTH_FT = 12;
     int RUNWAY_SURFACE = 13;
     int RUNWAY_LIGHTED = 14;
-
 }

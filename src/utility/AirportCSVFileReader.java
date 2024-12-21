@@ -11,7 +11,7 @@ import java.util.Scanner;
  * @version 1.0
  */
 
-public class AirportFileReader {
+public class AirportCSVFileReader {
 
     // instance attribute for the file path
     private String filePath;
@@ -23,7 +23,7 @@ public class AirportFileReader {
      * @precondition filePath to an existing csv file
      * @postcondition instance of AirPortFileReader
      */
-    public AirportFileReader(String filePath)
+    public AirportCSVFileReader(String filePath)
     {
         this.setFilePath(filePath);
     }
@@ -70,7 +70,7 @@ public class AirportFileReader {
      * @precondition the file to the filepath defined inside the constant interface needs to exist
      * @postcondition instance of AirPortFileReader
      */
-    public AirportFileReader() {
+    public AirportCSVFileReader() {
         this(Constant.STANDARD_PATH);
     }
     /**

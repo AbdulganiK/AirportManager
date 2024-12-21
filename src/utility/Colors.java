@@ -1,5 +1,25 @@
 package utility;
 
+// code from: https://stackoverflow.com/questions/5762491/how-to-print-color-in-console-using-system-out-println
+
+/**
+ * The Colors class provides ANSI escape codes as constants to enable color formatting
+ * in terminal output. These constants can be used to style text with regular colors,
+ * bold text, underlining, background colors, and high-intensity colors.
+ *
+ * This class includes:
+ * - Reset code to clear formatting.
+ * - Regular text colors (e.g., BLACK, RED, GREEN).
+ * - Bold text styles for colors (e.g., BLACK_BOLD, RED_BOLD).
+ * - Underlined text styles for colors (e.g., BLACK_UNDERLINED, RED_UNDERLINED).
+ * - Background colors (e.g., BLACK_BACKGROUND, RED_BACKGROUND).
+ * - High-intensity colors in regular and bold text (e.g., BLACK_BRIGHT, BLACK_BOLD_BRIGHT).
+ * - High-intensity background colors (e.g., BLACK_BACKGROUND_BRIGHT).
+ *
+ * These constants are often used in console-based applications or logging systems to
+ * enhance readability by color-coding messages or emphasizing important information.
+ *
+ */
 public class Colors {
     // Reset
     public static final String RESET = "\033[0m";  // Text Reset
