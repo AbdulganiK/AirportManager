@@ -18,5 +18,7 @@ public class Lighting {
         this.isOn = isOn;
     }
 
-
+    public boolean getStatus() {
+        return isOn;
+    }
 }

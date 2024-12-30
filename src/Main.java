@@ -1,3 +1,4 @@
+import control.AirportController;
 import control.AirportFactory;
 import control.DataValidationController;
 import model.Airport;
@@ -18,7 +19,10 @@ import java.util.ArrayList;
  */
 public class Main {
     public static void main(String[] args) {
-        task2(task1());
+        task4(
+                task3(
+                        task2(
+                                task1())));
     }
 
     /**
@@ -32,12 +36,39 @@ public class Main {
     }
 
     private static ArrayList<Airport> task2(ArrayList<String> rawData) {
-        DataValidationController dataController = new DataValidationController(rawData);
-        ArrayList<String> validatedData = dataController.getValidatedData();
-        System.out.println(validatedData.size());
-        return null;
-
+        return new AirportFactory().buildAirports(
+                new DataValidationController(rawData)
+                        .validateData());
     }
+
+    public static AirportController task3(ArrayList<Airport> airports) {
+        AirportController controller = new AirportController(airports);
+        controller.sortAirportsByLongitude();
+        controller.sortAirportsByType();
+        controller.sortAirportsByCountry();
+        controller.sortAirportsBySurface();
+        controller.sortAirportsByID();
+        controller.sortAirportsByElevation();
+        controller.sortAirportsByContinent();
+        controller.sortAirportsByLength();
+        controller.sortAirportsByWidth();
+        controller.sortAirportsByWidth();
+        controller.sortAirportsByIdent();
+        controller.sortAirportsByMunicipality();
+        controller.sortAirportsByName();
+        controller.sortAirportsByRegion();
+        controller.sortAirportsByLatitude();
+        return controller;
+    }
+
+    public static void task4(AirportController controller) {
+        Airport airportWithTheSmallestRunwayWidthInNewZeeland = controller.getAirportWithSmallestRunwayWidthInNewZeeland();
+        Airport airportWithTheSmallestRunwayLengthLightedInGermany = controller.getAirportWithSmallestRunwayLengthLightedInGermany();
+        int amountOfAirportsInAustralia = controller.getAirportAmountInAustralia();
+        long sumOfLightedAirportLengthsInAfrica = controller.getSumOfLightedAirportsInAfrica();
+    }
+
+
 
 
 

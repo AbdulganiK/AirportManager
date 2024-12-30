@@ -15,7 +15,18 @@ public interface Constant {
     String STANDARD_PATH = "src/resources/airports.csv";
     String CSV_EXTENSION = ".csv";
     int EXCEPTION_EXIT = -1;
-    String SEPARATOR = ",";
-    int startCountryISOString = 0;
-    int endCountryISOString = 2;
+    char SEPARATOR = ',';
+    char QUOTES = '"';
+    String EMPTY = "";
+    int START_COUNTRY_STRING = 0;
+    int END_COUNTRY_STRING = 2;
+    int MIN_LATITUDE_DEG = -90;
+    int MAX_LATITUDE_DEG = 90;
+    int MIN_LONGITUDE_DEG = -180;
+    int MAX_LONGITUDE_DEG = 180;
+    String UNKNOWN = "UNKNOWN";
+    long MAX_ELEVATION_MM = 9000000L;
+    long MIN_ELEVATION_MM = -387000L;
+    String UNLIGHTED = "0";
+
 }

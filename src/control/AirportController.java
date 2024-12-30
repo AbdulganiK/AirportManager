@@ -1,6 +1,10 @@
 package control;
 
+import control.Sorts.*;
 import model.Airport;
+import model.Continent;
+import model.Country;
+import model.Type;
 
 import java.util.ArrayList;
 
@@ -25,15 +29,6 @@ public class AirportController {
     }
 
     /**
-     * @precondition airport should be valid
-     * @postcondition airport is added to the airports attribute
-     * @param airport object which should be added to the controller
-     */
-    public void addAirport(Airport airport) {
-        this.airports.add(airport);
-    }
-
-    /**
      * Method to add airports.
      * @precondition all airports have to be valid
      * @postcondition airports are added to the airports attribute
@@ -43,16 +38,163 @@ public class AirportController {
         this.airports.addAll(airports);
     }
 
-    /**
-     * @precondition an aiport which is existing in the airports attribute
-     * @postcondition the airport does not exist in the airports anymore
-     * @param airport object which should be removed
-     */
-    public void deleteAirport(Airport airport) {
-        this.airports.remove(airport);
+    public ArrayList<Airport> filterAirportsByType(Type type) {
+        ArrayList<Airport> filteredAirports = new ArrayList<>();
+        for (Airport airport : this.getAirports()) {
+            if (airport.getType().equals(type)) {
+                filteredAirports.add(airport);
+            }
+        }
+        return filteredAirports;
     }
 
+    public ArrayList<Airport> filterAirportsByLightingStatus(boolean status) {
+        ArrayList<Airport> filteredAirports = new ArrayList<>();
+        for (Airport airport : this.getAirports()) {
+            if (airport.getRunway().getLighting().getStatus() == status) {
+                filteredAirports.add(airport);
+            }
+        }
+        return filteredAirports;
+    }
 
+    public ArrayList<Airport> filterAirportsByCountry(Country country) {
+        ArrayList<Airport> filteredAirports = new ArrayList<>();
+        for (Airport airport : this.getAirports()) {
+            if (airport.getLocation().getCountry().equals(country)) {
+                filteredAirports.add(airport);
+            }
+        }
+        return filteredAirports;
+    }
 
+    public Airport getAirportWithSmallestRunwayWidthInNewZeeland() {
+        this.sortAirportsByWidth();
+        ArrayList<Airport> airportsNewZeeland =  this.filterAirportsByCountry(Country.NZ);
+        return airportsNewZeeland.getFirst();
+    }
+
+    public Airport getAirportWithSmallestRunwayLengthLightedInGermany() {
+        this.sortAirportsByLength();
+        ArrayList<Airport> airportsGermany = this.filterAirportsByCountry(Country.DE);
+        for (Airport airport : airportsGermany) {
+            if (airport.getRunway().getLighting().getStatus()) {
+                return airport;
+            }
+        }
+        return null;
+    }
+
+    public int getAirportAmountInAustralia() {
+        return filterAirportsByCountry(Country.AU).size();
+    }
+
+    public ArrayList<Airport> getAirports() {
+        return airports;
+    }
+
+    public static ArrayList<Airport> filterAirportsByContinent(ArrayList<Airport> airports, Continent continent) {
+        ArrayList<Airport> filteredAirports = new ArrayList<>();
+        for (Airport airport : airports) {
+            if (airport.getLocation().getContinent().equals(continent)) {
+                filteredAirports.add(airport);
+            }
+        }
+        return filteredAirports;
+    }
+
+    public long getSumOfLightedAirportsInAfrica() {
+        ArrayList<Airport> lightedAirports = filterAirportsByLightingStatus(true);
+        ArrayList<Airport> lightedAirportsInAfrica = filterAirportsByContinent(lightedAirports, Continent.AF);
+        long sumOfRunwayLengths = 0;
+        for (Airport airport: lightedAirportsInAfrica) {
+            sumOfRunwayLengths += airport.getRunway().getLength();
+        }
+        return sumOfRunwayLengths;
+    }
+
+    public ArrayList<Airport> sortAirportsByName() {
+        ArrayList<Airport> airports = this.getAirports();
+        airports.sort(new SortByName());
+        return airports;
+    }
+
+    public ArrayList<Airport> sortAirportsByID() {
+        ArrayList<Airport> airports = this.getAirports();
+        airports.sort(new SortByID());
+        return airports;
+    }
+
+    public ArrayList<Airport> sortAirportsByIdent() {
+        ArrayList<Airport> airports = this.getAirports();
+        airports.sort(new SortByAirportIdent());
+        return airports;
+    }
+
+    public ArrayList<Airport> sortAirportsByContinent() {
+        ArrayList<Airport> airports = this.getAirports();
+        airports.sort(new SortByContinent());
+        return airports;
+    }
+
+    public ArrayList<Airport> sortAirportsByElevation() {
+        ArrayList<Airport> airports = this.getAirports();
+        airports.sort(new SortByElevation());
+        return airports;
+    }
+
+    public ArrayList<Airport> sortAirportsByCountry() {
+        ArrayList<Airport> airports = this.getAirports();
+        airports.sort(new SortByElevation());
+        return airports;
+    }
+
+    public ArrayList<Airport> sortAirportsByRegion() {
+        ArrayList<Airport> airports = this.getAirports();
+        airports.sort(new SortByISORegion());
+        return airports;
+    }
+
+    public ArrayList<Airport> sortAirportsByMunicipality() {
+        ArrayList<Airport> airports = this.getAirports();
+        airports.sort(new SortByMunicipality());
+        return airports;
+    }
+
+    public ArrayList<Airport> sortAirportsByLength() {
+        ArrayList<Airport> airports = this.getAirports();
+        airports.sort(new SortByRunwayLength());
+        return airports;
+    }
+
+    public ArrayList<Airport> sortAirportsByWidth() {
+        ArrayList<Airport> airports = this.getAirports();
+        airports.sort(new SortByRunwayWidth());
+        return airports;
+    }
+
+    public ArrayList<Airport> sortAirportsBySurface() {
+        ArrayList<Airport> airports = this.getAirports();
+        airports.sort(new SortByRunWaySurface());
+        return airports;
+    }
+
+    public ArrayList<Airport> sortAirportsByType() {
+        ArrayList<Airport> airports = this.getAirports();
+        airports.sort(new SortByType());
+        return airports;
+    }
+
+    public ArrayList<Airport> sortAirportsByLongitude() {
+        ArrayList<Airport> airports = this.getAirports();
+        airports.sort(new SortByLongitude());
+        return airports;
+    }
+
+    public ArrayList<Airport> sortAirportsByLatitude() {
+        ArrayList<Airport> airports = this.getAirports();
+        airports.sort(new SortByLatitude());
+        return airports;
+    }
 
 }

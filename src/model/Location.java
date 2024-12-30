@@ -12,7 +12,7 @@ public class Location {
     private String region;
     private Country country;
     private String municipality;
-    private int elevation;
+    private long elevation;
 
     /**
      * Constructs a {@code Location} instance with the specified geographical data.
@@ -25,7 +25,7 @@ public class Location {
      * @param municipality The municipality or city where the location is found.
      * @param elevation    The elevation above sea level (in feet). Must be non-negative.
      */
-    public Location(Continent continent, String region, Country country, String municipality, int elevation) {
+    public Location(Continent continent, String region, Country country, String municipality, long elevation) {
         this.continent = continent;
         this.region = region;
         this.country = country;
@@ -49,7 +49,7 @@ public class Location {
         return municipality;
     }
 
-    public int getElevation() {
+    public long getElevation() {
         return this.elevation;
     }
 }

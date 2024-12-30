@@ -7,6 +7,5 @@ public enum Type {
     LARGE_AIRPORT,
     MEDIUM_AIRPORT,
     SEAPLANE_BASE,
-    SMALL_AIRPORT;
-
+    SMALL_AIRPORT,
 }

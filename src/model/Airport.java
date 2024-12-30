@@ -38,7 +38,7 @@ public class Airport {
      * @precondition All input parameters must be non-null, and numeric values should be within valid ranges.
      * @postcondition A new Airport object is initialized with the provided values.
      */
-    public Airport(int id, String airport_ident, Type type, String name, double latitude_deg, double longitude_deg, int elevation_ft, Continent continent, Country iso_country, String iso_region, String municipality, int runway_length_ft, int runway_width_ft, String runway_surface, boolean isOn) {
+    public Airport(int id, String airport_ident, Type type, String name, double latitude_deg, double longitude_deg, long elevation_ft, Continent continent, Country iso_country, String iso_region, String municipality, long runway_length_ft, long runway_width_ft, String runway_surface, boolean isOn) {
         this.id = new Identification(id, airport_ident);
         this.type = type;
         this.name = name;
@@ -68,6 +68,8 @@ public class Airport {
         this.location = location;
         this.runway = runway;
     }
+
+
 
     public Identification getId() {
         return id;

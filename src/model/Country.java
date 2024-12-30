@@ -247,7 +247,13 @@ public enum Country {
     YT(Continent.AF), // Mayotte
     ZA(Continent.AF), // South Africa
     ZM(Continent.AF), // Zambia
-    ZW(Continent.AF); // Zimbabwe
+    ZW(Continent.AF), // Zimbabwe
+    XK(Continent.EU), // Kossovo
+    GS(Continent.SA),
+    UM(Continent.OC),
+    BL(Continent.NA),
+    CW(Continent.NA),
+    CX(Continent.OC);
     private final Continent continent;
     Country(Continent continent) {
         this.continent = continent;

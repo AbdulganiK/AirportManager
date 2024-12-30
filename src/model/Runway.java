@@ -7,8 +7,8 @@ package model;
  * </p>
  */
 public class Runway {
-    private int width;
-    private int length;
+    private long width;
+    private long length;
     private String surface;
     private Lighting lighting;
 
@@ -21,21 +21,24 @@ public class Runway {
      * @param surface The surface type of the runway (e.g., "asphalt", "concrete"). Cannot be null or empty.
      * @param lighting Indicates the lightning of the runway
      */
-    public Runway(int width, int length, String surface, Lighting lighting) {
+    public Runway(long width, long length, String surface, Lighting lighting) {
         this.width = width;
         this.length = length;
         this.surface = surface;
         this.lighting = lighting;
     }
 
-    public int getWidth() {
+    public long getWidth() {
         return width;
     }
 
-    public int getLength() {
+    public long getLength() {
         return length;
     }
 
+    public Lighting getLighting() {
+        return lighting;
+    }
 
     public String getSurface() {
         return surface;
